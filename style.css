@@ -126,7 +126,6 @@ main {
 }
 #home .container {
     margin: 0;
-    overflow: hidden;
 }
 
 #home .image {
