@@ -36,6 +36,9 @@ img {
 }
 
 /* ======== BASE ============ */
+html {
+    scroll-behavior: smooth;
+}
 body {
     font: 400 1rem "DM Sans", sans-serif;
     color: var(--text-color);
@@ -67,7 +70,12 @@ body {
 
 .divider-1 {
     height: 1px;
-    background: linear-gradient(270deg, hsla(var(--hue), 36%, 57%, 1) 0%, hsla(var(--hue), 65%, 88%, 0.34) 100%);
+    background: linear-gradient(270deg, hsla(var(--hue), 36%, 57%, 1), hsla(var(--hue), 65%, 88%, 0.34));
+}
+
+.divider-2 {
+    height: 1px;
+    background: linear-gradient(270deg, hsla(var(--hue), 65%, 88%, 0.34), hsla(var(--hue), 36%, 57%, 1));
 }
 
 /* ======== LAYOUT ============ */
@@ -84,6 +92,18 @@ body {
 
 .section {
     padding: 5rem 0;
+}
+
+.section title {
+    margin-bottom: 1rem;
+}
+
+.section header {
+    margin-bottom: 4rem;
+}
+
+.section header strong {
+    color: var(--base-color);
 }
 
 #header {
@@ -190,7 +210,7 @@ nav.show ul.grid {
 nav.show div.icon-menu {
     display: none;
 }
-nav .icon-menu  {
+nav .icon-menu {
     position: absolute;
     right: 1.5rem;
 }
@@ -205,7 +225,6 @@ nav .icon-close {
 
     transition: 0.3s;
 }
-
 
 nav.show div.icon-close {
     visibility: visible;
@@ -259,3 +278,71 @@ nav.show div.icon-close {
 #home .text p {
     margin-bottom: 2rem;
 }
+
+/* ======== ABOUT ============ */
+#about {
+    background-color: #fff;
+}
+
+#about .container {
+    margin: 0;
+}
+
+#about .image {
+    position: relative;
+}
+
+#about .image::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -8.3%;
+    left: -33%;
+    background-color: var(--base-color-second);
+}
+
+#about .image img {
+    position: relative;
+}
+
+#about .image img,
+#about .image::before {
+    border-radius: 0.25rem;
+}
+
+#about .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    max-width: 100%;
+}
+
+/* ======== SERVICES ============ */
+#services {
+    background-color: var(--body-color);
+}
+.cards {
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 3.625rem 2rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-bottom: .25rem solid var(--base-color);
+    border-radius: .25rem .25rem 0 0;
+    text-align: center;
+}
+
+.card i {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    color: var(--base-color);
+}
+
+.card .title {
+    font-size: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+

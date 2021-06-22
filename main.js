@@ -7,3 +7,11 @@ for (const element of toggle) {
   })
 }
 
+/* esconder o menu quando clicar em um item */
+const links = document.querySelectorAll('nav ul li a')
+for (const link of links) {
+  link.addEventListener('click', function() {
+    nav.classList.remove('show')
+  })
+}
+
