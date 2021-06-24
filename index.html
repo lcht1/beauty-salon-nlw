@@ -4,17 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    
     <link rel="stylesheet" href="style.css" />
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- icons -->
+    <link rel="stylesheet" href="./assets/fonts/style.css" />
+
     
 
-    <!-- ICONS -->
-    <link rel="stylesheet" href="./assets/fonts/style.css">
     <title>Beauty Salon</title>
   </head>
   <body>
@@ -22,7 +32,7 @@
       <nav class="container">
         <a class="logo" href="#">beauty<span>salon</span>.</a>
         <!-- menu -->
-        <div class="menu " >
+        <div class="menu">
           <ul class="grid">
             <li><a class="title" href="#home">Início</a></li>
             <li><a class="title" href="#about">Sobre</a></li>
@@ -35,14 +45,13 @@
 
         <div class="toggle icon-menu"></div>
         <div class="toggle icon-close"></div>
-
       </nav>
     </header>
 
     <main>
+      <!-- HOME -->
       <section class="section" id="home">
         <div class="container grid">
-
           <div class="image">
             <img
               src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
@@ -58,79 +67,184 @@
             </p>
             <a class="button" href="#">Agendar um horário</a>
           </div>
-
         </div>
       </section>
 
       <div class="divider-1"></div>
 
+      <!-- ABOUT -->
       <section class="section" id="about">
-        <div class="container grid"> 
-
+        <div class="container grid">
           <div class="image">
-            <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="3 mulheres cabelereiras">
+            <img
+              src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+              alt="3 mulheres cabelereiras"
+            />
           </div>
 
           <div class="text">
             <h2 class="title">Sobre nós</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores neque porro numquam fugit delectus debitis culpa. Placeat a vero sit maiores voluptatum earum nisi fuga dolore, quos ad quae!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              asperiores neque porro numquam fugit delectus debitis culpa.
+              Placeat a vero sit maiores voluptatum earum nisi fuga dolore, quos
+              ad quae!
             </p>
-            <br>
+            <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id tenetur ab quas, fuga eveniet. Placeat hic atque unde quo suscipit corporis amet, dolor, autem asperiores eligendi provident, iusto repudiandae.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id
+              tenetur ab quas, fuga eveniet. Placeat hic atque unde quo suscipit
+              corporis amet, dolor, autem asperiores eligendi provident, iusto
+              repudiandae.
             </p>
-            <br>
+            <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint reiciendis eius quas nisi quidem architecto ab, vero nemo minus neque doloremque cumque fuga id, aliquam perferendis explicabo ducimus cupiditate nihil.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              reiciendis eius quas nisi quidem architecto ab, vero nemo minus
+              neque doloremque cumque fuga id, aliquam perferendis explicabo
+              ducimus cupiditate nihil.
             </p>
           </div>
         </div>
       </section>
+
       <div class="divider-2"></div>
 
+      <!-- SERVICES -->
       <section class="section" id="services">
         <div class="container grid">
           <header>
             <h2 class="title">Serviços</h2>
-            <p>Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
+            <p>
+              Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
+              conquistou clientes de inúmeros países com seus tratamentos
+              exclusivos e totalmente naturais
+            </p>
           </header>
           <div class="cards grid">
             <div class="card">
               <i class="icon-woman-hair"></i>
               <h3 class="title">Terapia capilar</h3>
-              <p>Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.</p>
+              <p>
+                Terapia completa para couro cabeludo e fios, protegendo todos os
+                tipos de cabelos, inclusive os longos e finos.
+              </p>
             </div>
             <div class="card">
               <i class="icon-trim"></i>
               <h3 class="title">Cortes</h3>
-              <p>A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.</p>
+              <p>
+                A nossa equipe é repleta de profissionais renomados, famosos por
+                lançarem tendências com cortes diferenciados e clássicos.
+              </p>
             </div>
             <div class="card">
               <i class="icon-cosmetic"></i>
               <h3 class="title">Tratamentos</h3>
-              <p>O beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo de cabelo.</p>
+              <p>
+                O beautysalon conta com diversos tratamentos naturais e
+                totalmente veganos, para qualquer tipo de cabelo.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
+      <div class="divider-1"></div>
+
+      <!-- TESTIMONIALS -->
       <section class="section" id="testimonials">
-        <div class="container grid">
-          Depoimentos
+        <div class="container ">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laborum placeat eos dolorem reprehenderit illo accusamus
+                    molestiae assumenda, est beatae, dolores aliquam autem
+                    repudiandae. Quae dolor velit voluptas ad laudantium.
+                    Dolore?
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/15.jpg"
+                      alt="foto de Wanessa Souza"
+                    />
+                    Wanessa Souza
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laborum placeat eos dolorem reprehenderit illo accusamus
+                    molestiae assumenda, est beatae, dolores aliquam autem
+                    repudiandae. Quae dolor velit voluptas ad laudantium.
+                    Dolore?
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/25.jpg"
+                      alt="foto de Luna Falcão"
+                    />
+                    Luna Falcão
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Laborum placeat eos dolorem reprehenderit illo accusamus
+                    molestiae assumenda, est beatae, dolores aliquam autem
+                    repudiandae. Quae dolor velit voluptas ad laudantium.
+                    Dolore?
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/89.jpg"
+                      alt="foto de Mariana Santos"
+                    />
+                    Mariana Santos
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+          </div>
         </div>
       </section>
+
+      <div class="divider-2"></div>
+
+      <!-- CONTACT -->
 
       <section class="section" id="contact">
         <div class="container grid">
-          Contato
+          <header>
+            <h2 class="title">Contato</h2>
+          </header>
         </div>
       </section>
-
-
-      
-      
     </main>
   </body>
+  <!-- Swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- main -->
+
   <script src="main.js"></script>
 </html>
