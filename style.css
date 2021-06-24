@@ -145,6 +145,10 @@ main {
     color: var(--base-color);
 }
 
+.logo-alt span{
+    color: var(--body-color);
+}
+
 /* ======== NAVIGATION ============ */
 
 nav {
@@ -465,4 +469,34 @@ nav.show div.icon-close {
     color: var(--base-color);
 }
 
+/* ======== FOOTER ============ */
+footer {
+    background-color: var(--base-color);
+}
+
+footer .logo {
+    display: block;
+    margin-bottom: 1.5rem;
+    
+}
+
+footer .brand p,
+footer .social i {
+    color: var(--text-color-light);
+    font-weight: 400;
+}
+
+footer .brand p {
+    margin-bottom: .75rem;
+}
+footer .social {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+    
+}
+footer .social i {
+    font-size: 1.5rem;
+
+}
 
