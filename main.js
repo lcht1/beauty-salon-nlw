@@ -10,24 +10,24 @@ for (const element of toggle) {
 /* esconder o menu quando clicar em um item */
 const links = document.querySelectorAll('nav ul li a')
 for (const link of links) {
-  link.addEventListener('click', function() {
+  link.addEventListener('click', function () {
     nav.classList.remove('show')
   })
 }
 
-/* ativar sombra quando der scroll */ 
+/* ativar sombra quando der scroll */
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
 
-window.addEventListener('scroll', function() {
-  if(window.scrollY >= navHeight) {
+window.addEventListener('scroll', function () {
+  if (window.scrollY >= navHeight) {
     header.classList.add('scroll')
   } else {
     header.classList.remove('scroll')
   }
 })
 
-/* Testimonials carousel slider swiper */ 
+/* Testimonials carousel slider swiper */
 
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
@@ -35,8 +35,29 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination'
   },
   mousewheel: true,
-  keyboard: true, 
-  
+  keyboard: true,
 
-  
+
+
 });
+
+/* ScrollReveal */
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+
+})
+
+
+scrollReveal.reveal(
+  `#home .text, #home .image,
+  #about .text, #home .image,
+  #services header, #services .card,
+  #testimonials header, #testimonials .testimonials,
+  #contact .text, #contact .links
+  `, { interval: 100 }
+  
+  )
